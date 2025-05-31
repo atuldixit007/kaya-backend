@@ -44,5 +44,6 @@ app.post('/api/send-email', async (req, res) => {
 
 // Start server
 app.listen(PORT, () => {
-  console.log(`Backend server is running on http://localhost:${PORT}`);
+  console.log(`Backend server is running on port ${PORT}`);
+
 });
