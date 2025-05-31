@@ -1,0 +1,9 @@
+POST http://localhost:3000/api/send-email
+Content-Type: application/json
+
+{
+  "name": "Test User",
+  "email": "test@example.com",
+  "phone": "+1234567890",
+  "message": "This is a test message from VS Code REST Client."
+}
