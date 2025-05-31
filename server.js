@@ -55,6 +55,11 @@ app.post('/api/send-email', async (req, res) => {
   }
 });
 
+// === Health check / default route ===
+app.get('/', (req, res) => {
+  res.send('Backend is running 🚀');
+});
+
 // Start server
 app.listen(PORT, () => {
   console.log(`🚀 Backend server is running on port ${PORT}`);
